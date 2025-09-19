@@ -15,6 +15,7 @@ header {
 }
 
 .voltorb-img-1 {
+    cursor: pointer;
     position: absolute;
     right: 0;
     top: 50%;
@@ -41,6 +42,7 @@ header {
 }
 
 .voltorb-img-2 {
+    cursor: pointer;
     position: absolute;
     left: 0;
     top: 50%;
