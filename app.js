@@ -36,6 +36,15 @@ document.querySelectorAll('.imagenes-iniciales img').forEach(function(img) {
         } else {
             contenedor.style.backgroundColor = "#fff";
         }
+
+        //Cambia el texto de la imagen
+        const nombre = img.getAttribute('alt');
+        const textP = contenedor.querySelector('p');
+        const numero = img.getAttribute('data-numero');
+        if (textP) {
+            textP.textContent =  "Nombre: " + nombre + " - Tipo: " + tipo +
+            " - Numero: " + numero;
+        }
     })
 });
 
