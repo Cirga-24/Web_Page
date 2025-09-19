@@ -64,3 +64,31 @@ document.addEventListener('keydown', function(e) {
         konamiPos = 0;
     }
 });
+
+//Presionar voltorbs
+document.querySelectorAll('.voltorb-img-1, .voltorb-img-2').forEach(function(voltorb) {
+    
+    voltorb.addEventListener('click', function() {
+        let onomatopeya;
+        if (voltorb.classList.contains('voltorb-img-1')) {
+            onomatopeya = document.querySelector('.onomatopeya-der');
+        } else {
+            onomatopeya = document.querySelector('.onomatopeya-izq');
+        }
+        if (onomatopeya) {
+            onomatopeya.style.display = 'block';
+            onomatopeya.style.opacity = '1';
+            // Reinicia la animación
+            onomatopeya.style.animation = 'none';
+            void onomatopeya.offsetWidth;
+            onomatopeya.style.animation = null;
+            // Oculta después de 1 segundo
+            setTimeout(() => {
+                onomatopeya.style.display = 'none';
+                onomatopeya.style.opacity = '0';
+            }, 1000);
+        } else {
+            console.log('No se encontró el elemento de onomatopeya.');
+        }
+    });
+});
