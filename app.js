@@ -19,7 +19,7 @@ document.querySelectorAll('.imagenes-iniciales img').forEach(function(img) {
         }
     
         //Evita que se pueda spamear el click
-        bloqueado = true;
+        bloqueado = false;
         setTimeout(() => {
             bloqueado = false;
         }, 2000);
