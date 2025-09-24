@@ -6,7 +6,7 @@ document.querySelectorAll('.imagenes-iniciales img').forEach(function(img) {
     }
 
     //Reproduce el sonido y cambia el color
-    let bloqueado = false;
+    let bloqueado = true;
     img.addEventListener('click', function() {
 
         //Reproduce el sonido al hacer click sobre la imagen
