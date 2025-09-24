@@ -117,6 +117,19 @@ h2 {
     text-align: center;
 }
 
+ol {
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(38, 38, 38);
+}
+
+ol li {
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(38, 38, 38);
+    text-align: center;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0px;
