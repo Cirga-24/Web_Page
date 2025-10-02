@@ -14,7 +14,7 @@ document.querySelectorAll('.imagenes-iniciales img').forEach(function(img) {
         const sonido = img.getAttribute('data-sonido');
         if (sonido) {
             const audio = new Audio(sonido);
-            audio.volume = 1;
+            audio.volume = 0.6;
             audio.play();
         }
     
